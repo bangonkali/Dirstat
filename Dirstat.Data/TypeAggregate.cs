@@ -13,12 +13,12 @@ namespace Dirstat.Data
     public ulong PathNodeId { get; set; }
     
     /// <summary>
-    /// Number of files of this type that are descendant of PathNodeId.
+    /// Includes descendants. Number of files of this type that are descendant of PathNodeId.
     /// </summary>
     public ulong Count { get; set; }
     
     /// <summary>
-    /// Total size in bytes of this type that are descendants of PathNodeId.
+    /// Includes descendants. Total size in bytes of this type that are descendants of PathNodeId.
     /// </summary>
     public double Bytes { get; set; }
   }

@@ -11,7 +11,7 @@ namespace Dirstat
 
       Scanner scanner = new Scanner(new ScannerOptions()
       {
-        Root = "/Users/gilmichael/Desktop/Projects/ekin/Ekin.Flutter/ekin_connect_app",
+        Root = "/Users/gilmichael/Downloads/Test Assessment",
       });
 
       scanner.Scan();

@@ -8,7 +8,7 @@ namespace Dirstat.Data
     /// <summary>
     /// String path of the node starting from the root.
     /// </summary>
-    public string Path { get; set; }
+    public string Name { get; set; }
     
     /// <summary>
     /// The PathNodeId primary key.
@@ -44,5 +44,7 @@ namespace Dirstat.Data
     /// Parent PathNode Id.
     /// </summary>
     public ulong ParentId { get; set; }
+    
+    public ulong Depth { get; set; }
   }
 }
