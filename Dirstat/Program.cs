@@ -1,20 +1,18 @@
-﻿using System;
-using Dirstat.Data;
+﻿// See https://aka.ms/new-console-template for more information
 
-namespace Dirstat
-{
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      Console.WriteLine("Root!");
+using DirStat.Core;
 
-      Scanner scanner = new Scanner(new ScannerOptions()
-      {
-        Root = "/Users/gilmichael/Downloads/Test Assessment",
-      });
+Console.WriteLine("Hello, World!");
 
-      scanner.Scan();
-    }
-  }
-}
+// Crawling D:\Pics
+// Total Number of Files: 106411
+// Total Size in Bytes: 390,403,999,923.00 (363.59 GB)
+
+// Crawling E:\Cloud\Google Drive\My Drive\Pics
+// Total Number of Files: 106345
+// Total Size in Bytes: 390,403,983,865.00 (363.59 GB)
+
+
+// var crawler = new Crawler(@"D:\Pics");
+var crawler = new Crawler(@"E:\Cloud\Google Drive\My Drive");
+await crawler.Crawl();
